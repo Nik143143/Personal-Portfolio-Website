@@ -1,0 +1,73 @@
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Body styling: center text, background color, font, and spacing */
+body {
+  text-align: center;
+  background-color: #52b69a;
+  color: #1e6091;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+/* Container for centering the game vertically and horizontally */
+.container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Game board: 3x3 grid, responsive sizing, and spacing between cells */
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+}
+/* Individual cell (box) styling: size, rounded corners, shadow, font, and color */
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  font-size: 8vmin;
+  color: #fe7f2d;
+  background-color: #d9ed92;
+}
+/* Reset button styling */
+#reset-btn {
+  padding: 1rem;
+  font-size: 2vmin;
+  border-radius: 1rem;
+  border: none;
+  background-color: #b5e48c;
+  color: #1e6091;
+}
+/* New game button styling (same as reset) */
+#new-btn {
+  padding: 1rem;
+  font-size: 2vmin;
+  border-radius: 1rem;
+  border: none;
+  background-color: #b5e48c;
+  color: #1e6091;
+}
+/* Message container: center message and buttons, large font, spacing */
+.msg-container {
+  height: 100vmin;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 3rem;
+  gap: 3rem;
+}
+/* Utility class to hide elements */
+.hide {
+  display: none;
+}

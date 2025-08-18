@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="intro.html">My Intro</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="hamBurger">
+                <img src="images/ham.png" alt="Hamburger Menu Icon" class="ham" width="23px">
+                <img src="images/letter-x.png" alt="Cross Icon" class="cross" width="23px">
+            </div>
+            <div class="contactForm">
+                <h1>Contact me for general inquries</h1>
+                <!-- Contact form, validated by contactform() in app.js -->
+                <form onsubmit="return contactform()">
+                    <div>
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" />
+                    </div>
+                    <div>
+                        <label for="inquiryEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="inquiryEmail" aria-describedby="emailHelp" />
+                        <div id="emailHelp" class="form-text">
+                            We'll never share your contact details with anyone else.
+                        </div>
+                    </div>
+                    <div>
+                        <label for="inquryPhone" class="form-label">Contact Number</label>
+                        <input type="phone" class="form-control" id="inquryPhone" />
+                    </div>
+                    <div id="form-check">
+                        <input type="checkbox" class="form-check-input" id="isInquery" />
+                        <label class="form-check-label" for="isInquery">I want to work with you on a project</label>
+                    </div>
+                    <div class="messageBox">
+                        <label for="message" class="inquiry-message">Inquiry Message</label>
+                        <textarea name="message" rows="5" cols="5" id="inquiryMessage">
+                        </textarea>
+                    </div>
+                    <div class="buttons">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Sidebar/hamburger logic and form validation -->
+    <script src="app.js"></script>
+</body>
+
+</html>

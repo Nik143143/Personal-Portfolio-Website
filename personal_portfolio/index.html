@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio Website</title>
+  <!-- Link to main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- Sidebar navigation (toggle with hamburger menu) -->
+    <div class="sidebar sidebarGo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="intro.html">My Intro</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main">
+      <!-- Hamburger and cross icons for sidebar toggle -->
+      <div class="hamBurger">
+        <img src="images/ham.png" alt="Hamburger Menu Icon" class="ham" width="23px">
+        <img src="images/letter-x.png" alt="Cross Icon" class="cross" width="23px">
+      </div>
+      <!-- Welcome message -->
+      <div class="infoContainer">
+        <div class="devInfo">
+          <div class="hello">Hey There,</div>
+          <div class="name welcome">Welcome to my Website</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Main JavaScript for sidebar and menu logic -->
+  <script src="app.js"></script>
+</body>
+
+</html>
